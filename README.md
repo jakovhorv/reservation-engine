@@ -165,7 +165,7 @@ To run the tests:
 - ReservationControllerIntegrationTest - Reservation creation and confirmation, including conflict and not-found responses.
 
 ## 8. Limitations
-   No authentication or authorization: The API does not associate reservations with authenticated users or restrict access to its endpoints.
-   Fixed hold duration: Holds expire after five minutes; this duration is hardcoded.
-   No cancellation endpoint: Confirmed reservations cannot be cancelled through the exposed API.
-   Periodic expiration updates: Expired holds are marked EXPIRED by a job that runs every 30 seconds, rather than immediately when their expiration timestamp passes.
+- No authentication or authorization: The API does not associate reservations with authenticated users or restrict access to its endpoints.
+- Fixed hold duration: Holds expire after five minutes; this duration is hardcoded.
+- No cancellation endpoint: Confirmed reservations cannot be cancelled through the exposed API.
+- Periodic expiration updates: Expired holds are marked EXPIRED by a job that runs every 30 seconds, rather than immediately when their expiration timestamp passes.
